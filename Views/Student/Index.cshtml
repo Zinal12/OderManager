@@ -1,0 +1,11 @@
+﻿@Model IENumerable<OderManager.Models.Employee>
+
+
+    @{ ViewBag.Title = "Index";}
+    @Html.Partial("../Shared/_Card.cshtml", @Model.);
+    @foreach (var items in Model)
+    {
+
+        @*@Html.Partial("~/Views/_Card.cshtml", Model)*@
+
+    }
